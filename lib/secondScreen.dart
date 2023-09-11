@@ -7,6 +7,7 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Spacer(),
           GestureDetector(
@@ -19,6 +20,17 @@ class SecondScreen extends StatelessWidget {
                 "assets/images/flutterfarsi1.png",
                 height: 300,
                 width: 300,
+              ),
+            ),
+          ),
+          const Hero(
+            tag: 1,
+            child: Center(
+              child: Text(
+                "فلاتر فارسی",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
             ),
           ),

@@ -8,6 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const SizedBox(
             height: 100,
@@ -27,6 +28,17 @@ class HomeScreen extends StatelessWidget {
                 "assets/images/flutterfarsi1.png",
                 height: 300,
                 width: 300,
+              ),
+            ),
+          ),
+          const Hero(
+            tag: 1,
+            child: Center(
+              child: Text(
+                "Flutter Farsi",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
             ),
           ),
